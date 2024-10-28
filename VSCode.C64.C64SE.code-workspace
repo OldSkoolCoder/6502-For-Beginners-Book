@@ -1,0 +1,18 @@
+{
+    "folders": [
+		{
+			"path": "."
+		}
+    ],
+	"settings": {
+        "files.autoSave": "afterDelay",
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.fontSize": 22,
+        "files.associations": {
+            "*.asm": "kickassembler"
+		},
+        "kickassembler.assembler.option.outputDirectory": "Bin",
+        "terminal.integrated.defaultLocation": "editor",
+        "terminal.integrated.fontSize": 18
+	}
+}

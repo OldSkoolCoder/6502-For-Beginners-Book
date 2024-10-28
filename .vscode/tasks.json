@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "command": "cmd",
+    "isShellCommand": true,
+    "showOutput": "always",
+    "echoCommand": true,
+    "suppressTaskName": true,
+    "args": [
+        "/C"
+    ],
+    "tasks": [
+        {
+            "label": "Assemble Source",
+            "type": "shell",
+            "windows": {
+                "command": "java -cp .\\Tools\\Kick\\KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -binfile -odir .\\bin -o .\\bin\\Program.bin",
+                "console": "externalTerminal",
+            },
+            "linux": {
+                "command": "java -cp ./Tools/Kick/KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -binfile -odir ./bin  -o ./bin/Program.bin"
+            },
+            "osx": {
+                "command": "java -cp ./Tools/Kick/KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -binfile -odir ./bin  -o ./bin/Program.bin"
+            }
+        },
+        {
+            "label": "Launch Simulator",
+            "type": "shell",
+            "windows": {
+                "command": ".\\Tools\\Simulator\\Win-x64\\ca6502Debugger.exe \".\\bin\\Program.bin\""
+            },
+            "linux": {
+                "command": "./Tools/Simulator/Linux-x64/ca6502Debugger ./bin/Program.bin"
+            },
+            "osx": {
+                "command": "./Tools/Simulator/OSX-arm64/ca6502Debugger ./bin/Program.bin"
+            },
+            "dependsOn": [
+                "Assemble Source"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+   ]
+}
