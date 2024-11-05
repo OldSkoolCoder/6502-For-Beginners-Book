@@ -16,4 +16,5 @@ Take the leap into 8-bit programming and discover the power of the 6502 with thi
 
 The first time it runs the OS will block it and another box will appear on this screen that asks you to confirm its ok
 ![alt text](Images/MACOS_PrivacyAndSecurity.png)
+
 Subsequently it will work fine
