@@ -11,3 +11,9 @@ By the end of the book, you’ll be able to write simple assembly programs, unde
 - Perfect for hobbyists, students, and retro computing fans
 
 Take the leap into 8-bit programming and discover the power of the 6502 with this accessible and engaging guide!
+
+**NOTE FOR MAC USERS**
+
+The first time it runs the OS will block it and another box will appear on this screen that asks you to confirm its ok
+![alt text](Images/MACOS_PrivacyAndSecurity.png)
+Subsequently it will work fine
