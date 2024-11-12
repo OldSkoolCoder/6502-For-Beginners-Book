@@ -12,7 +12,7 @@ Factorial:
     beq BaseCase    // If X is 1, return 1 (base case)
     dex             // Decrement X
     jsr Factorial   // Call the factorial function recursively for X-1
-    txa             // Copy the result (X-1)! from the Accumulator to X
+    tax             // Copy the result (X-1)! from the Accumulator to X
     inx             // Increment X to get X!
     rts             // Return
 

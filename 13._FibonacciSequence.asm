@@ -32,7 +32,7 @@ Fibonacci:
 
     dex          // Decrement X
     jsr Fibonacci // Call Fibonacci recursively for X-1
-    txa          // Copy the result for X-1 from the Accumulator to X
+    tax          // Copy the result for X-1 from the Accumulator to X
     dex          // Decrement X again
     jsr Fibonacci // Call Fibonacci recursively for X-2
     clc          // Clear the carry flag
