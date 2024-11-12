@@ -11,7 +11,7 @@
         "files.associations": {
             "*.asm": "kickassembler"
 		},
-        "kickassembler.assembler.option.outputDirectory": "Bin",
+        "kickassembler.assembler.option.outputDirectory": "bin",
         "terminal.integrated.defaultLocation": "editor",
         "terminal.integrated.fontSize": 18
 	}
